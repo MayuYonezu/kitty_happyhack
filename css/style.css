@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+@font-face {
+    font-family: "Futura";
+    src: url(fonts/Futura-Med.ttf) format("truetype");
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: "Futura";
+    src: url(fonts/Futura-Boo.ttf) format("truetype");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "Futura";
+    src: url(fonts/Futura-LigObl.ttf) format("truetype");
+    font-style: italic;
+    font-weight: lighter;
+  }
+
+
+
+
+.bg-swicher  {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/background1.jpg);
+    background-position: center center;
+    background-size: cover;
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+nav ul{
+    overflow: hidden;
+    margin: 0 50px;
+}
+
+nav li {
+    list-style: none;
+    float: left;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 30px 15px 0;
+    color: #fff;
+    transition: 0.5s;
+    font-family: "Futura";
+    font-weight: normal;
+    font-size: 20pt;
+}
+
+nav a:hover {
+    color: #3D5CDB;
+}
+
+.top {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.top img {
+    width: 900px;
+    height: auto;
+}
+
+.top p {
+    font-size: 30px;
+    color: #fff;
+    font-family: "Futura";
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family: "Futura";
+    font-weight: bold;
+    font-size: 40pt;
+    padding: 40px;
+    color: #3D5CDB;
+}
+
+.introduction{
+    margin: 0 auto;
+    display: block;
+}
+
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.detail img{
+    width: 500px;
+    object-fit: contain;
+    float:  left; 
+}
+
+.detail-text {
+    width: 500px;
+    display: inline-block;
+    margin: 20px;
+    line-height: 2;
+}
+
+.detail-text p{
+    font-size: 16px;
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', sans-serif;
+    width: 400px;
+    margin: 0px 50px 20px;
+}
+
+.detail-text a{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    width: 170px;
+    height: 40px;
+    border-radius: 12px;
+    margin: 30px auto;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.detail-text a:hover {
+    box-shadow: 0 2px 15px 2px rgba(106, 137, 152, 0.4);
+}
+  
+
+.Courses {
+    background-color: rgba(186, 213, 245, 0.6);
+    position:relative;
+	
+}
+
+.courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.course-containe {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+.course-info {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 240px;
+    height: 340px;
+    margin: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(106, 137, 152, 0.2);
+    padding: 30px;
+}
+
+.course-info h3{
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+    margin: 10px;
+    padding-top: 20px;
+    color: #183c61;
+}
+
+.course-info a {
+    display: block;
+    margin: 15px auto;
+    text-decoration: none;
+    width: 170px;
+    height: 40px;
+    background-color: #ffbf00;
+    color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+.course-info a:hover{
+    box-shadow: 0 2px 15px 2px rgba(151, 154, 156, 0.4);
+}
+
+.couse_image{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.couse_image img{
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.access-wrap{
+    display:flex;
+    justify-content: center;
+}
+
+footer p{
+    text-align: center;
+    font-family: "Futura";
+    font-size: 12pt;
+    padding: 20px;
+    color: #3D5CDB;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color:black ;
+}
+
+
+.slider {
+    width: 100%;
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .slider li {
+    height: auto;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+ 
+  
+  .slick-dots {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .fuwatAnime {
+    -webkit-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:1.5s;
+    -ms-animation-duration:1.5s;
+    animation-duration:1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+   }
+   @-webkit-keyframes fuwatAnime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+   }
+   @keyframes fuwatAnime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+   }
+
+
+@media all and (max-width:480px){
+    nav a {
+        padding: 15px 5px 0;
+        font-size: 10pt;
+    }
+
+    .top img {
+        width: 70vw;
+        height: auto;
+    }
+
+    .detail{
+        width: 100vw;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .detail img{
+        width: 100vw;
+        object-fit: contain;
+        
+    }
+    
+    .detail-text {
+        width: 100vw;
+        display: block;
+        margin: 0 auto;
+        line-height: 2;
+    }
+    
+    .detail-text p{
+        font-size: 16px;
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', sans-serif;
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    .detail-text a{
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        color: #fff;
+        width: 170px;
+        height: 40px;
+        border-radius: 12px;
+        margin: 30px auto;
+        line-height: 40px;
+        font-weight: bold;
+    }
+
+    .access-wrap{
+        display:flex;
+        justify-content: center;
+        width: 70vw;
+        height: auto;
+    }
+
+    
+}
